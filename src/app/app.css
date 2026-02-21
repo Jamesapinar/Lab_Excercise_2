@@ -1,0 +1,142 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* COLORS */
+:root {
+  --primary-blue: #1e3a8a;
+  --light-blue: #3b82f6;
+  --white: #ffffff;
+  --light-bg: #f4f8ff;
+}
+
+/* BODY */
+body {
+  background-color: var(--light-bg);
+  color: #333;
+}
+
+/* NAVIGATION */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--primary-blue);
+  padding: 15px 60px;
+}
+
+.logo {
+  color: var(--white);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--light-blue);
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: var(--white);
+}
+
+.hero h1 {
+  font-size: 40px;
+  color: var(--primary-blue);
+}
+
+.hero p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #555;
+}
+
+/* PRODUCTS */
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 60px;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+.card {
+  background: var(--white);
+  width: 300px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin: 15px 0 10px;
+  color: var(--primary-blue);
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.price {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--light-blue);
+  margin-bottom: 15px;
+}
+
+.card button {
+  background: var(--primary-blue);
+  color: var(--white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card button:hover {
+  background: var(--light-blue);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: var(--primary-blue);
+  color: var(--white);
+  margin-top: 40px;
+}
