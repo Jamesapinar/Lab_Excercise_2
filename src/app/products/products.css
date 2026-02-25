@@ -1,0 +1,88 @@
+
+/* PRODUCTS */
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 60px;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+.card {
+  background: var(--white);
+  width: 300px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;           /* Fixed height */
+  object-fit: cover;       /* Crop nicely */
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin: 15px 0 10px;
+  color: var(--primary-blue);
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.price {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--light-blue);
+  margin-bottom: 15px;
+}
+
+.card button {
+  background: var(--primary-blue);
+  color: var(--white);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card button:hover {
+  background: var(--light-blue);
+}
+
+
+/* Out of Stock State */
+.card.out-of-stock {
+  background: #ffe5e5;
+  border: 2px solid #ff4d4d;
+  box-shadow: 0 10px 25px rgba(255, 0, 0, 0.2);
+}
+
+.card.out-of-stock h3,
+.card.out-of-stock p,
+.card.out-of-stock .price {
+  color: #cc0000;
+}
+
+.card.out-of-stock button {
+  background: #ff4d4d;
+  cursor: not-allowed;
+}
+
+.card.out-of-stock button:hover {
+  background: #ff4d4d;
+  transform: none;
+}
